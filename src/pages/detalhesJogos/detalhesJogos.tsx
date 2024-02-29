@@ -48,7 +48,7 @@ const DetalhesJogos = () => {
         }
         avaliacoesObj.push(avalicaoUser)
         localStorage.setItem('avaliacoesUsuarios', JSON.stringify(avaliacoesObj))
-        setAvalicaoUsers(avaliacaoUsers)
+        window.location.reload();
     }
 
     return (

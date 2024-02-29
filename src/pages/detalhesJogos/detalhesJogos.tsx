@@ -6,9 +6,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 const DetalhesJogos = () => {
-
+    
     const navigate = useNavigate()
-    navigate('/detalhesJogo')
     
     useEffect(() => {
         const avaliacoesString = localStorage.getItem("avaliacoesUsuarios");

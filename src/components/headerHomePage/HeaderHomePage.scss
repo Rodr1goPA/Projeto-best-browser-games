@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(222, 217, 217, 0.877);
+    padding: 20px;
+&__h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(66, 119, 66);
+    margin-left: 20px;
+}
+}
+.Form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+&__input{
+    width: 75%;
+    height: 20px;
+    margin-right: 5px;
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.434);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+}
+&__select{
+    margin-right: 5px;
+    border-style: none;
+    background-color: darkgray;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+&__btn{
+    border-style: none;
+    background-color: rgb(66, 119, 66);
+    padding: 8px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+}
+.LogoutUser{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-right: 20px;
+    &__span{
+        color: rgb(14, 93, 14);
+        font-size: 16px;
+    }
+}

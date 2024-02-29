@@ -35,7 +35,7 @@ const DetalhesJogos = () => {
         }
     };
 
-    const salvarHandle = async (e: any) => {
+    const salvarHandle = (e: any) => {
         e.preventDefault()
         const avalicaoUser = {
             nomeUsuario: jogadorLogadoObj.nome,
@@ -45,8 +45,7 @@ const DetalhesJogos = () => {
         }
         avaliacoesObj.push(avalicaoUser)
         localStorage.setItem('avaliacoesUsuarios', JSON.stringify(avaliacoesObj))
-        
-        await window.location.reload();
+        setAvalicaoUsers(avaliacaoUsers)
     }
 
     return (

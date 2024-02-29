@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import StarRating from '../../components/avalicaoJogos/AvaliacaoJogos';
 import DescriptionComponent from '../../components/descricaoJogo/DescricaoJogo';
 import './detalhesJogos.scss';
@@ -6,6 +7,7 @@ import { useEffect } from 'react';
 
 const DetalhesJogos = () => {
 
+    const navigate = useNavigate()
     useEffect(() => {
         const avaliacoesString = localStorage.getItem("avaliacoesUsuarios");
         const avaliacoesObj = avaliacoesString ? JSON.parse(avaliacoesString) : [];
@@ -16,7 +18,7 @@ const DetalhesJogos = () => {
     }, [])
 
     const [rating, setRating] = useState(0);
-    const [avaliacaoUsers, setAvalicaoUsers] = useState([])
+    const [avaliacaoUsers, setAvalicaoUsers] = useState([navigate])
     
     const jogoSelecionado: any = localStorage.getItem("jogoSelecionado")
     const jogoSelecionadoObj = JSON.parse(jogoSelecionado)

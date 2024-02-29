@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 const DetalhesJogos = () => {
 
     const navigate = useNavigate()
+    navigate('/detalhesJogo')
+    
     useEffect(() => {
         const avaliacoesString = localStorage.getItem("avaliacoesUsuarios");
         const avaliacoesObj = avaliacoesString ? JSON.parse(avaliacoesString) : [];

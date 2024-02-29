@@ -15,10 +15,10 @@ const DetalhesJogos = () => {
         // Filtra as avaliações apenas para o jogo selecionado
         const avaliacoesJogoSelecionado = avaliacoesObj.filter((avaliacao:any) => avaliacao.nomeJogo === jogoSelecionadoObj.nome);
         setAvalicaoUsers(avaliacoesJogoSelecionado);
-    }, [])
+    }, [navigate])
 
     const [rating, setRating] = useState(0);
-    const [avaliacaoUsers, setAvalicaoUsers] = useState([navigate])
+    const [avaliacaoUsers, setAvalicaoUsers] = useState([])
     
     const jogoSelecionado: any = localStorage.getItem("jogoSelecionado")
     const jogoSelecionadoObj = JSON.parse(jogoSelecionado)
